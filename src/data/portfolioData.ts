@@ -74,8 +74,8 @@ export const portfolioData = {
     role: "Software Development",
   },
   about: {
-    emojiSrc: "/assets/images/emoji.png",
-    avatarSrc: "/assets/images/memoji-alt.png",
+    emojiSrc: `${import.meta.env.BASE_URL}assets/images/emoji.png`,
+    avatarSrc: `${import.meta.env.BASE_URL}assets/images/memoji-alt.png`,
     introBold: "I'm Vaka Abhiram, a computer science student from Hyderabad, India.",
     paragraph1:
       "Building a foundation in computer science at Keshav Memorial College of Engineering, exploring machine learning, computer vision, data analysis, and software development through projects.",
@@ -245,7 +245,7 @@ export const portfolioData = {
     email: "ganaanjan51@gmail.com",
     emailLink: "mailto:ganaanjan51@gmail.com",
     subtext: "Or reach out directly via email or GitHub.",
-    avatarSrc: "/assets/images/memoji-contact.png",
+    avatarSrc: `${import.meta.env.BASE_URL}assets/images/memoji-contact.png`,
     socials: [
       {
         name: "GitHub",

@@ -11,7 +11,7 @@ export const Hero: React.FC = () => {
       <div
         className="m-0 h-full w-full max-w-full p-0 relative"
         style={{
-          background: 'url(/assets/images/background.png) center / cover no-repeat',
+          background: `url(${import.meta.env.BASE_URL}assets/images/background.png) center / cover no-repeat`,
           backgroundSize: 'cover',
         }}
       >
