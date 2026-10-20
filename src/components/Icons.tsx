@@ -64,7 +64,7 @@ export const MailIcon: React.FC<{ className?: string }> = ({ className = "h-8 w-
 );
 
 // Project Card Logos (h-16 w-16)
-export const ProjectLogo: React.FC<{ type: string }> = ({ type }) => {
+export const ProjectLogo: React.FC<{ type?: string }> = ({ type = 'code' }) => {
   switch (type) {
     case 'voltammetry':
       // Cyclic Voltammetry ML: Electrochemical duck curve with data signal
@@ -102,8 +102,24 @@ export const ProjectLogo: React.FC<{ type: string }> = ({ type }) => {
           <circle cx="18" cy="23" r="2.5" fill="#2563eb" />
         </svg>
       );
+    case 'ai':
+      return (
+        <svg viewBox="0 0 64 64" className="h-16 w-16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="64" height="64" rx="16" fill="white" fillOpacity="0.15" />
+          <path d="M32 16L35 27L46 30L35 33L32 44L29 33L18 30L29 27L32 16Z" fill="white" />
+          <circle cx="46" cy="18" r="3" fill="#60a5fa" />
+          <circle cx="18" cy="46" r="3" fill="#93c5fd" />
+        </svg>
+      );
+    case 'web':
+    case 'code':
     default:
-      return null;
+      return (
+        <svg viewBox="0 0 64 64" className="h-16 w-16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="64" height="64" rx="16" fill="white" fillOpacity="0.15" />
+          <path d="M26 24L18 32L26 40M38 24L46 32L38 40M34 20L30 44" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      );
   }
 };
 

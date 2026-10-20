@@ -8,7 +8,7 @@ export interface Project {
   tags: { label: string; isLightCard?: boolean }[];
   demoUrl: string;
   githubUrl: string;
-  iconType: 'voltammetry' | 'oralabs';
+  iconType?: 'voltammetry' | 'oralabs' | 'ai' | 'code' | 'web' | string;
   status: string;
   isOngoing?: boolean;
 }
